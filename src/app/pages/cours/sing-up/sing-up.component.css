@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.top {
+    border-bottom: .5px solid gray;
+    width: 100%;
+    position: relative;
+}
+
+
+.backArrow {
+    color: black;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.topTitle {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.singUp > * {
+    font-family: 'Poppins';
+}
+
+
+.singUp {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 80%;
+    max-width: 400px;
+    min-width: 300px;
+    padding: 30px;
+}
+
+.inputContainer ,.bottomParte  {
+    margin-top: 20px;
+}
+
+.inputContainer>label {
+    font-size: .8em;
+}
+
+.inputContainer > input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    margin-top: 3px;
+    outline: .5px solid gray;
+    border-radius: 5px;
+}
+
+
+.bottomParte > input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 8px 5px;
+    color :black;
+    font-weight: bold;
+}
+
+.bottomParte > input:hover {
+    background-color: darkgray;
+    color:white
+}
+
+.bottom{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logIn > a{
+    color: black;
+}
+
+.logIn > a:hover{
+    color: gray;
+}
+
+.logIn {
+    margin-top: 30px;
+}
+
+.AlreadyHaveAccount {
+    color: darkgray;
+    font-size: .8em;
+}

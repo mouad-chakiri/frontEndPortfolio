@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/***********
+.mainContainer {
+    background-image: url('https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGVhY2hlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60');
+    filter: grayscale(100%);  /*** put here any filter you want 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+***/
+
+.top {
+    border-bottom: .5px solid gray;
+    width: 100%;
+    position: relative;
+}
+
+
+.backArrow {
+    color: black;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.topTitle {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logIN > * {
+    font-family: 'Poppins';
+}
+
+
+.logIN {
+    /**
+    if you use back ground image and you want to give this section a style
+    background-color: white;
+    border-radius: 30px;
+    **/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 80%;
+    max-width: 400px;
+    min-width: 300px;
+    padding: 30px;
+}
+
+.inputContainer  {
+    margin-top: 20px;
+}
+
+.inputContainer > input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    margin-top: 5px;
+    outline: .5px solid gray;
+    border-radius: 5px;
+}
+
+.rememberMe {
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.bottomParte > input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 8px 5px;
+    color :black;
+    font-weight: bold;
+}
+
+.bottomParte > input:hover {
+    background-color: darkgray;
+    color:white
+}
+
+.bottom{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgetPass > a  , .singUp > a{
+    color: black;
+}
+
+.forgetPass > a:hover  , .singUp > a:hover{
+    color: gray;
+}
+
+.singUp {
+    margin-top: 30px;
+}
+
+.dontHaveAccount {
+    color: darkgray;
+}
