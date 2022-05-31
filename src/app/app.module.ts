@@ -6,13 +6,27 @@ import { AppComponent } from './app.component';
 import { LogINComponent } from './pages/cours/log-in/log-in.component';
 import { SingUPComponent } from './pages/cours/sing-up/sing-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import { PortfolioComponent } from './pages/portfolio/portfolio/portfolio.component';
+import { CoursComponent } from './pages/cours/cours/cours.component';
+import { AdminComponent } from './pages/admin/admin/admin.component';
+import { CourHeaderComponent } from './components/courComponents/cour-header/cour-header.component';
+import { PortfolioHeaderComponent } from './components/portfolioComponents/portfolio-header/portfolio-header.component';
+import { HeroSectionComponent } from './components/portfolioComponents/hero-section/hero-section.component';
+import { FooterComponent } from './components/communComponents/footer/footer.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LogINComponent,
-    SingUPComponent
+    SingUPComponent,
+    PortfolioComponent,
+    CoursComponent,
+    AdminComponent,
+    CourHeaderComponent,
+    PortfolioHeaderComponent,
+    HeroSectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
