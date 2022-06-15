@@ -13,7 +13,11 @@ import { AdminComponent } from './pages/admin/admin/admin.component';
 import { CourHeaderComponent } from './components/courComponents/cour-header/cour-header.component';
 import { PortfolioHeaderComponent } from './components/portfolioComponents/portfolio-header/portfolio-header.component';
 import { HeroSectionComponent } from './components/portfolioComponents/hero-section/hero-section.component';
-import { FooterComponent } from './components/communComponents/footer/footer.component'
+import { FooterComponent } from './components/communComponents/footer/footer.component';
+import { CourHeroComponent } from './components/courComponents/cour-hero/cour-hero.component';
+import { CourSectionComponent } from './components/courComponents/cour-section/cour-section.component';
+import { CourCardComponent } from './components/courComponents/cour-card/cour-card.component'
+
 
 @NgModule({
   declarations: [
@@ -26,13 +30,16 @@ import { FooterComponent } from './components/communComponents/footer/footer.com
     CourHeaderComponent,
     PortfolioHeaderComponent,
     HeroSectionComponent,
-    FooterComponent
+    FooterComponent,
+    CourHeroComponent,
+    CourSectionComponent,
+    CourCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

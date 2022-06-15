@@ -1,0 +1,70 @@
+
+<!-- Cours section -->
+<section class="cours" id="cours">
+    <div class="max-width">
+        <div class="title" id="cour">
+            <h1><i class="fa-solid fa-bookmark"></i>  cours</h1>
+            <p style="color:black; font-size:14px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repudiandae perferendis commodi! </p>
+        </div>
+        <div class="categorieSection">
+            <span><a href="#" class="categorie">All</a></span>
+           <span><a href="#" class="categorie">Oracle</a></span>
+           <span><a href="#" class="categorie">Electricite</a></span>
+           <span><a href="#" class="categorie">base de donnee</a></span>
+           <span><a href="#" class="categorie">Mysql</a></span>
+           <span><a href="#" class="categorie">Jee</a></span>
+           <span><a href="#" class="categorie">Mobile</a></span>
+           <span><a href="#" class="categorie">More <i class="fa-solid fa-arrow-down"></i></a></span>
+        </div>
+        <div class="courGrid">
+            <!--hada ghadi ikon componants men be3d-->
+            <div class="courCard" *ngFor="let cour of listDesCour" >
+                <img src="{{cour.imsgeUrl}}" alt="angular" class="courImg" />
+                <div class="textContainer">
+                    <h3 class="courTile">{{cour.title}}</h3>
+                    <span class="date">uploaded : {{cour.date}}</span>
+                    <p class="description">{{cour.description}}</p>
+                    <a class="seeMore" (click)="openModal()">see more</a>
+                </div>
+            </div>
+
+            <!-- HENA KAYN L  MODEL  KAY2AFFICHI LES DETAUL DYAL L COUR -->
+            <div id="myModal" class="modal" *ngIf="showModal === 1 ">
+                <div class="modal-content">
+                  <span class="close" (click)="closeModal()">&times;</span>
+
+                  <div class="content">
+                    <h1>Angular</h1>
+                    <img src="./../../../../assets/courImages/mysql.png" alt="image" class="imgModal">
+                    <h5 class="date">uploaded : 30/1/2099</h5>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta obcaecati pariatur animi sint saepe impedit eaque vero ipsum dolore, debitis facere incidunt nostrum cupiditate porro ex neque, quis inventore
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta obcaecati pariatur animi sint saepe impedit eaque vero ipsum dolore, debitis facere incidunt nostrum cupiditate porro ex neque, quis inventore.</p>
+                    <div class="firstChapter">
+                        <h3>Chapitre 1 :</h3>
+                        <p>This is the first chapter of this cour and it is for free</p>
+                        <iframe  class="vedio" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe>
+                        <a href="#" class="demandAccessBTN">Demander l'accee</a>
+                    </div>
+                </div>
+
+                </div>
+              </div>
+            <!-- HENA KAYSSALI L MODAL   --->
+
+        </div>
+
+        <div class="paginationContainer">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+</section>
+<script src="./../../../../assets/script.js"></script>

@@ -1,0 +1,85 @@
+.max-width{
+    max-width: 1300px; /*the width of the begist screen*/
+    padding: 0 2.5em;
+    margin: auto;
+}
+
+.heroSection{
+    display: flex;
+    height: 80vh;
+    min-height: 500px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.hero-content{
+    width: 40%;
+}
+
+.imageContainer , .heroImage {
+    max-width: 400px;
+    min-width: 200px;
+    border-radius: 50px 90px;
+    height: 100%;
+    margin: auto 0;
+}
+
+.helloText{ 
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.nameText{
+    font-size: 3em;
+    font-weight: 800;
+    color:#3B71FE;
+    margin-bottom: 20px;
+}
+
+.descriptionText{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contactMeBTN{
+    background: #3B71FE;
+    color: #ffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid transparent;
+}
+
+.contactMeBTN:hover {
+    text-decoration: none;
+    color:#3B71FE;
+    background-color: white;
+    border: 1px solid #3B71FE;
+}
+
+.seeMyCour{
+    color: black;
+    margin-left: 3em;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.seeMyCour:hover{
+    text-decoration: none;
+    border: 1px solid #3B71FE;
+    background-color: white;
+    color: #3B71FE;
+}
+
+#arrow {
+    color: #3B71FE;
+    margin-left: 10px;
+    display: inline-block;
+}
+

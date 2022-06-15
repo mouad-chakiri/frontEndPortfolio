@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+/* poppins font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ubuntu mono font import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+/* ubunut font import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'ubuntu' ,sans-serif;
+}
+
+
+.logo a{
+    color:black;
+    text-transform: uppercase;
+}
+
+.logo a span {
+    color: #3B71FE;
+    font-weight: 800;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    padding: 0 5%;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 ;
+}
+
+h2{
+    margin: 0!important;
+    font-size: 22px;
+}
+
+nav  ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav  ul li a {
+    text-decoration: none;
+    color: darkgray;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav  ul li a:hover{
+    color:black;
+}
+
+.active {
+    border-bottom: 2.5px solid #3B71FE;
+    color:black!important;
+}
+
+.cour {
+    
+    background-color: #3B71FE;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    margin: auto;
+    color:#ffffff!important;
+    border: 1px solid transparent;
+}
+
+.cour:hover{
+    background-color: white;
+    color:#3B71FE!important;
+    border: 1px solid #3B71FE;
+}
+

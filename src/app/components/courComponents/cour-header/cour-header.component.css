@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'ubuntu' ,sans-serif;
+}
+
+a:hover , a {
+    text-decoration: none;
+}
+
+/*Header*/
+#header{
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 2px 2px 11px -5px;
+}
+
+.max-width{
+    max-width: 1300px; /*the width of the begist screen*/
+    padding: 0 2.5em;
+    margin: auto;
+}
+
+.header .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+}
+.logo a{
+    color:black;
+    text-transform: uppercase;
+}
+
+.logo a span {
+    color: #3B71FE;
+}
+
+
+
+.header .menu{
+    align-items: center;
+    margin: auto 0;
+}
+
+.header .menu li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.header .menu li a {
+    color:black;
+    font-size: .8em;
+    margin-left: 18px;
+    transition: color .2s linear;
+}
+
+.header .menu li a:hover{
+    color: #3B71FE;
+}
+
+.logIn {
+    color:white!important;
+    background-color:#3B71FE;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    margin: auto;
+}
+
+.logIn:hover{
+    color:#3B71FE!important;
+    background-color:white;
+    border: 1px solid #3B71FE;
+}
+
+.creetAccount{
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.creetAccount:hover{
+    border: 1px solid #3B71FE;
+}

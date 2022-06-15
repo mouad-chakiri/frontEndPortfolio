@@ -1,0 +1,420 @@
+/*Element set up*/
+:root {
+    --primary_color: #3B71FE;
+    --gray-color:#A0A4Ab;
+    --dark-theme-color:#262A31;
+    --white-color:#ffffff;
+    --text-color:#0E0E2c;
+    --light-gray : #606063;
+
+}
+/* poppins font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ubuntu mono font import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+/* ubunut font import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'ubuntu' ,sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+/*Header*/
+.header{
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 2px 2px 11px -5px;
+}
+
+.max-width{
+    max-width: 1300px; /*the width of the begist screen*/
+    padding: 0 2.5em;
+    margin: auto;
+}
+
+.header .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo a{
+    color:black;
+    text-transform: uppercase;
+}
+
+.logo a span {
+    color: #3B71FE;
+}
+
+
+
+.header .menu{
+    align-items: center;
+    margin: auto 0;
+}
+
+.header .menu li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.header .menu li a {
+    color:black;
+    font-size: .8em;
+    margin-left: 18px;
+    transition: color .2s linear;
+}
+
+.header .menu li a:hover{
+    color: #3B71FE;
+}
+
+.logIn {
+    color:white!important;
+    background-color:#3B71FE;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    margin: auto;
+}
+
+.logIn:hover{
+    color:#3B71FE!important;
+    background-color:white;
+    border: 1px solid #3B71FE;
+}
+
+.creetAccount{
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.creetAccount:hover{
+    border: 1px solid #3B71FE;
+}
+
+
+/* hunberguer BTN */
+.header-btn{
+    font-size: 30px;
+    color: #3B71FE;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* HERO SECTION */
+.hero{
+    height: calc(100vh);
+    position: relative;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255,255,255,.9) , rgba(0,0,0,.6),rgba(0,0,0,.8)) , url('./../../../../assets/courHero.jpg');
+}
+
+
+.max-width .text-container{
+    color:black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text1 , .text2{
+    color:white;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.text1 {
+    font-weight: 800;
+}
+
+.text2 {
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.text-container p {
+    color: white;
+    font-size: 20px;
+    font-family: 'ubunto mono';
+}
+
+.text-container .exploreCour {
+    color:white;
+    background-color: #3B71FE;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.text-container .exploreCour:hover{
+    background: white;
+    border: 1px solid #3B71FE;
+    color:#3B71FE;
+}
+
+.creetAccount {
+    color:#3B71FE!important
+}
+
+
+
+
+
+/********** COUR *****************/
+.cours{
+    margin-top: 90px;
+}
+
+#cours .max-width{
+    /*** hena zedt chwiya dyal l'espace l jnab dyal ga3 dak l container li fih les cours  ***/
+    padding: 0 6vw 0 6vw;
+}
+
+.title{
+    margin-top: 1.5em;
+    color:black;
+    font-family: poppins!important;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.categorieSection {
+    padding:15px 0;
+}
+
+.categorieSection .categorie{
+    border-radius: 30px;
+    background-color: var(--gray-color);
+    color: white;
+    padding: 6px 16px;
+    margin-right: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.categorieSection .categorie:hover{
+    background-color: var(--light-gray);
+    box-shadow: 3px 5px 12px rgba(0,0,0,0.2);
+}
+
+
+.cours .courGrid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.courCard{
+    padding-bottom: 30px;
+    border:1.5px solid rgba(0,0,0,0.09);
+    width: 31%;
+    min-width: 250px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    box-shadow: -3px -5px 30px rgba(0,0,0,0.12);
+    transition: box-shadow 0.3s ease-out;
+}
+
+.courCard:hover{
+    box-shadow: -3px -5px 30px rgba(0,0,0,0.2);
+    border:1,5px solid rgba(0,0,0,0.1.5);
+}
+
+.courCard:hover .courImg{
+    filter: none;
+}
+
+.textContainer {
+    padding: 10px 10px 10px 18px;
+}
+
+.courCard .courImg {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    background-size: cover;
+    background-position: center;
+    /*filter: grayscale(80%);*/
+}
+
+.courCard .date {
+    color: #A0A4Ab;
+    font-size: 12px;
+}
+
+.courCard .courTile {
+    font-size: 24px;
+}
+
+.courCard .description {
+    font-size: 16px;
+    font-family: 'ubuntu mono' ,sans-serif;
+    line-height: 18px;
+}
+
+.seeMore {
+    display: inline-block;
+    text-align: center;
+}
+
+/*  MODAL STYLE  */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+
+  .close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.content {
+    margin-top: 30px;
+}
+.content .imgModal {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.content .date {
+    color: var(--light-gray);
+    font-size: 14px;
+}
+
+.content .description {
+    font-size: 16px;
+    font-family: 'ubuntu mono' ,sans-serif;
+    line-height: 18px;
+}
+
+.vedio {
+    width: 90%;
+    height: 350px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.firstChapter {
+margin-top: 35px;
+}
+.demandAccessBTN {
+    background-color: var(--primary_color);
+    border: 1.4px solid transparent;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 30px;
+    color: white;
+    transition: color .2s linear;
+    transition: background-color .3 linear;
+}
+
+.demandAccessBTN:hover {
+    color:var(--primary_color);
+    background-color: white;
+    border: 1.4px solid var(--primary_color);
+}
+
+
+/* PAGINATION */
+.paginationContainer{
+    margin: auto;
+    width: 200px;
+}
+
+/** Media query Section Style  **/
+@media (max-width:950px ) {
+    .max-width {
+       padding: 0 50px; 
+    }
+    .header-btn{
+        display: block;
+        color: black;
+        z-index: 999;
+    }
+    
+    .header .menu{
+        position: fixed;
+        left:0;
+        top:0;
+        background: white;
+        height: 100vh;
+        width: 100%;
+        padding-top: 100px;
+        left: -100%;
+    }
+
+    .header .menu.active{
+        left: 0;
+    }
+
+    .header .menu li {
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+    
+    .header .menu li a {
+        font-size: 1.3em;
+    }
+}
